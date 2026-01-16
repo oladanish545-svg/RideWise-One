@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RideWise One</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+  <h1>RideWise One</h1>
+  <p>Smart rides. Zero overpay.</p>
+</div>
+
+<!-- LOCATION PAGE -->
+<section id="locationPage" class="hidden">
+  <h2>Choose your route</h2>
+
+  <div class="map-demo">
+    <iframe src="https://maps.google.com/maps?q=Delhi&t=&z=12&output=embed"></iframe>
+  </div>
+
+  <div class="manual-input">
+    <input placeholder="?? Pickup location">
+    <input placeholder="?? Drop location">
+  </div>
+
+  <button onclick="compare()">Compare Rides</button>
+</section>
+
+<!-- LOADER -->
+<section id="loader" class="hidden">
+  <div class="ring"></div>
+  <p>Finding best rides across platforms…</p>
+</section>
+
+<!-- RESULT PAGE -->
+<section id="resultPage" class="hidden">
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <button>Cheapest</button>
+    <button>Fastest</button>
+    <button>Balanced</button>
+  </div>
+
+  <!-- APP SCREENS -->
+  <div class="phones">
+
+    <div class="phone uber">
+      <div class="top">Uber</div>
+      <div class="body">
+        <p>Uber Go</p>
+        <h3>?212</h3>
+        <span>ETA 5 min</span>
+        <span>Driver: Rakesh ?4.7</span>
+        <button>Book Uber</button>
+      </div>
+    </div>
+
+    <div class="phone ola">
+      <div class="top">Ola</div>
+      <div class="body">
+        <p>Ola Mini</p>
+        <h3>?198</h3>
+        <span>ETA 6 min</span>
+        <span>Driver: Imran ?4.6</span>
+        <button>Book Ola</button>
+      </div>
+    </div>
+
+    <div class="phone rapido">
+      <div class="top">Rapido</div>
+      <div class="body">
+        <p>Bike Taxi</p>
+        <h3>?121</h3>
+        <span>ETA 3 min</span>
+        <span>Driver: Aman ?4.8</span>
+        <button>Book Rapido</button>
+      </div>
+    </div>
+
+    <div class="phone indrive">
+      <div class="top">InDrive</div>
+      <div class="body">
+        <p>Negotiated</p>
+        <h3>?185</h3>
+        <span>ETA 7 min</span>
+        <span>Driver: Sunil ?4.5</span>
+        <button>Book InDrive</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- OFFERS -->
+  <div class="offers">
+    <h3>?? Exclusive Offers</h3>
+    <p>Save up to ?40 on your next ride</p>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about">
+    <h3>About RideWise</h3>
+    <p>
+      RideWise helps users compare real-time ride options across platforms
+      so they never overpay again.
+    </p>
+  </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
